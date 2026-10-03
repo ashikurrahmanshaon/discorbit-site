@@ -1,6 +1,6 @@
 # Discorbit website
 
-Static website for Discorbit. No build step, no framework: plain HTML, CSS and JavaScript, ready for GitHub Pages.
+Website for Discorbit. The site is plain HTML, CSS and JavaScript. It runs as-is on GitHub Pages, and it also runs as a Node.js app (Hostinger) through the small Express server in `server.js`.
 
 ## Files
 
@@ -14,6 +14,8 @@ assets/img/           logo, favicon, app icons, social share image
 site.webmanifest      app name and icons for phones
 robots.txt, sitemap.xml   for search engines
 .nojekyll             tells GitHub Pages to serve the files as they are
+package.json          Node.js app definition (start script: `npm start`)
+server.js             small Express server that serves the site files
 ```
 
 ## GitHub e live korar niyom
@@ -34,6 +36,21 @@ robots.txt, sitemap.xml   for search engines
 4. 1-2 minute por site live hobe: `https://YOUR-USERNAME.github.io/discorbit-site/`
 
 Note: browser diye upload korle `.nojekyll` file ta (naam dot diye shuru) kokhono dekha jay na. Na uthleo site cholbe, tai chinta nei.
+
+## Hostinger e (Node.js app hishebe) deploy
+
+Ei repository te `package.json` ar start script (`npm start`) ache, tai Hostinger er Node.js web app e GitHub theke shorashori import kora jay.
+
+1. Hostinger e **Node.js web app** add korun, **Import Git repository** theke ei repository (branch `main`) select korun.
+2. Settings jodi nije theke na bhore:
+   - Framework: **Express** (na thakle **Other**)
+   - Install command: `npm install`
+   - Start command: `npm start`
+   - Entry file: `server.js`
+   - Build command / output directory: khali rakhun (kono build nei)
+3. Deploy korun. Server ta `PORT` environment variable e chole (na thakle 3000).
+
+Nijer computer e chalate: `npm install`, tarpor `npm start`, browser e `http://localhost:3000`.
 
 ## Nijer domain (discorbit.com) lagate chaile
 

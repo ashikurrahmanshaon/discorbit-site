@@ -1,0 +1,16 @@
+{
+  "name": "discorbit-site",
+  "version": "1.0.0",
+  "description": "Discorbit website: software development and global e-commerce",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
