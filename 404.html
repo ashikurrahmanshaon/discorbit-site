@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found | Discorbit</title>
+<meta name="robots" content="noindex">
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:grid;place-items:center;padding:48px 24px;background-color:#04061A;background-image:radial-gradient(rgba(143,161,255,.16) 1px,transparent 1.4px);background-size:30px 30px;color:#D3D8EE;font-family:"Manrope","Segoe UI",system-ui,sans-serif;font-size:17px;line-height:1.65;text-align:center}
+main{display:flex;flex-direction:column;align-items:center;gap:24px;max-width:560px}
+svg{width:96px;height:96px}
+.code{margin:0;color:#C3CAE8;font-family:"JetBrains Mono",ui-monospace,monospace;font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+h1{margin:0;color:#fff;font-family:"Sora","Segoe UI",system-ui,sans-serif;font-weight:600;font-size:clamp(2.2rem,6vw,3.6rem);letter-spacing:-.035em;line-height:1.08}
+p{margin:0}
+a{display:inline-flex;align-items:center;min-height:52px;padding:0 26px;border-radius:999px;background:#FF7A1A;color:#04061A;font-family:"Sora","Segoe UI",system-ui,sans-serif;font-size:15px;font-weight:600;text-decoration:none}
+a:hover{background:#FF913F}
+a:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.lg-orbit{fill:#6F86FF}.lg-disc{fill:#fff}.lg-sat{fill:#FF7A1A}
+</style>
+</head>
+<body>
+<main>
+<svg viewBox="0 0 476.16 476.16" role="img" aria-label="Discorbit"><g transform="translate(-40.92 -17.92) scale(1)"><path d="M138 64H262C297.87 64 331.45 73.84 360.17 90.96C337.76 97.41 321.32 118 321.14 142.45C303.45 133.22 283.33 128 262 128H174C170.69 128 168 130.69 168 134V378C168 381.31 170.69 384 174 384H262C332.69 384 390 326.69 390 256C390 234.67 384.78 214.55 375.55 196.86C400 196.68 420.59 180.24 427.04 157.83C444.16 186.55 454 220.13 454 256C454 362.04 368.04 448 262 448H138C119.22 448 104 432.78 104 414V98C104 79.22 119.22 64 138 64Z" class="lg-orbit"/><circle cx="279.0" cy="256" r="54" class="lg-disc"/><circle cx="375.14" cy="142.86" r="36" class="lg-sat"/></g></svg>
+<p class="code">Error 404</p>
+<h1>This page drifted out of orbit.</h1>
+<p>The address may be mistyped, or the page may have moved.</p>
+<a id="home" href="/">Back to the homepage</a>
+</main>
+<script>
+(function () {
+  // On a GitHub project page (name.github.io/repo/) the homepage is one folder down.
+  var a = document.getElementById('home');
+  if (/\.github\.io$/.test(location.hostname)) {
+    var first = location.pathname.split('/')[1];
+    if (first) a.setAttribute('href', '/' + first + '/');
+  }
+})();
+</script>
+</body>
+</html>
