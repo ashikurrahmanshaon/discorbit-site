@@ -1,0 +1,7 @@
+Sora, Manrope, JetBrains Mono and Instrument Serif are licensed under the SIL Open Font License 1.1
+https://openfontlicense.org
+
+Sora: Copyright 2019 The Sora Project Authors (https://github.com/sora-xor/sora-font)
+Manrope: Copyright 2019 The Manrope Project Authors (https://github.com/sharanda/manrope)
+JetBrains Mono: Copyright 2020 The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+Instrument Serif: Copyright 2022 The Instrument Serif Project Authors (https://github.com/Instrument/instrument-serif)
