@@ -19,7 +19,7 @@ const FILES = ['robots.txt', 'sitemap.xml', 'site.webmanifest'];
 const app = express();
 app.disable('x-powered-by');
 
-app.use('/assets', express.static(path.join(ROOT, 'assets'), { maxAge: '7d' }));
+app.use('/assets', express.static(path.join(ROOT, 'assets'), { maxAge: '1h' }));
 
 app.get('/', function (req, res) { res.sendFile(path.join(ROOT, 'index.html')); });
 PAGES.forEach(function (name) {
